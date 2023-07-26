@@ -1,0 +1,29 @@
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+.red-links a {
+    color: red;
+}
+
+.red-links a {
+    font-size: 20px;
+    /* Adjust the font size as per your preference */
+}
+
+.circular-text {
+    display: inline-block;
+    width: 300px;
+    /* Adjust the width and height as per your preference */
+    height: 63px;
+    border-radius: 50%;
+    background-color: #000;
+    /* Adjust the background color as per your preference */
+    color: #fff;
+    /* Adjust the text color as per your preference */
+    text-align: center;
+    line-height: 63px;
+    /* Adjust the line-height to vertically center the text */
+    font-size: 18px;
+    /* Adjust the font size as per your preference */
+    font-weight: bold;
+    /* Adjust the font weight as per your preference */
+}

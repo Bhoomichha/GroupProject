@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <mat-toolbar color="primary">
+
+    <span class="circular-text">DESTINATION XPLORER</span>
+    <span class="example-spacer"></span>
+    <div>
+      <nav class="red-links">
+        <a mat-button routerLink="/home" routerLinkActive="active">HOME</a>
+        <a mat-button routerLink="/contacts">CONTACTS</a>
+        <a mat-button routerLink="/destination">DESTINATION</a>
+        <a mat-button routerLink="/review">REVIEW</a>
+        <a mat-button routerLink="/signup"> SIGN UP</a>
+      </nav>
+    </div>
+  </mat-toolbar>
+  <router-outlet></router-outlet>
+</body>
+</html>
