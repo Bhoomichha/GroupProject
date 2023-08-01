@@ -16,6 +16,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCommonModule } from '@angular/material/core';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { FormsModule } from '@angular/forms';
     SignupComponent,
     DestinationComponent,
     ContactsComponent,
+    LoginComponent,
+
   ],
   imports: [
     BrowserModule,
