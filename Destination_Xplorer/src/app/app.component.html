@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
-<body>
-  <mat-toolbar color="primary">
 
-    <span class="circular-text">DESTINATION XPLORER</span>
+<body>
+  <mat-toolbar class="toolbar">
+
+    <a mat-button routerLink="/home" class="circular-text">DESTINATION XPLORER</a>
     <span class="example-spacer"></span>
     <div>
       <nav class="red-links">
@@ -20,6 +22,10 @@
       </nav>
     </div>
   </mat-toolbar>
+
+
+
   <router-outlet></router-outlet>
 </body>
+
 </html>

@@ -1,12 +1,20 @@
 @import '@angular/material/prebuilt-themes/indigo-pink.css';
 
-.red-links a {
-    color: red;
+* {
+    max-width: none;
+    margin-left: 25px;
+
 }
+
+
+.red-links a {
+    color: rgb(0, 0, 0);
+
+}
+
 
 .red-links a {
     font-size: 20px;
-    /* Adjust the font size as per your preference */
 }
 
 .circular-text {
@@ -15,9 +23,9 @@
     /* Adjust the width and height as per your preference */
     height: 63px;
     border-radius: 50%;
-    background-color: #000;
+    background-color: #ffffff;
     /* Adjust the background color as per your preference */
-    color: #fff;
+    color: #0e0d0d;
     /* Adjust the text color as per your preference */
     text-align: center;
     line-height: 63px;

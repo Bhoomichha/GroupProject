@@ -1,11 +1,37 @@
-<div class="contact-section">
-    <h1>Contact</h1>
-    <p>Feel free to reach out to us for any inquiries or collaborations.</p>
-    <form (ngSubmit)="sendMessageForm()">
-        <input type="text" placeholder="Your Full Name" name="fullName">
-        <input type="email" placeholder="Your Email" name="email">
-        <textarea placeholder="Your Message" name="message"></textarea>
-        <button type="submit">Send Message</button>
-          
-    </form>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+
+<body>
+    <div class="contact-section">
+        <h1>Contact Form</h1>
+        <p>Feel free to reach out to us for any inquiries or collaborations.</p>
+        <div class="container">
+            <form class="form" (ngSubmit)="sendMessageForm()">
+                <div class="descr">Contact us</div>
+                <div class="input">
+                    <input required="" autocomplete="off" type="text">
+                    <label for="name">Name</label>
+                </div>
+
+                <div class="input">
+                    <input required="" autocomplete="off" name="email" type="text">
+                    <label for="email">E-mail</label>
+                </div>
+
+                <div class="input">
+                    <textarea required="" cols="30" rows="1" id="message"></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <button>Send message →</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

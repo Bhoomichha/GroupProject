@@ -1,1 +1,45 @@
-<p>review works!</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Page</title>
+</head>
+
+<body>
+    <h1>Add your Review</h1>
+
+    <form class="container">
+        <div>
+            <label class="form-title" for="title">Review Title:</label>
+            <input required class="input" type="text" id="title" [(ngModel)]="reviewTitle">
+        </div>
+
+        <div>
+            <label class="form-title" for="description">Review Description:</label>
+            <textarea id="description" [(ngModel)]="reviewDescription" cols="25" rows="5"></textarea>
+        </div>
+
+        <span class="form-title">Upload your file</span>
+        <p class="form-paragraph">
+            File should be an image
+        </p>
+        <label for="file-input" class="drop-container">
+            <span class="drop-title">Drop files here</span>
+            or
+            <input type="file" accept="image/*" required="" id="file-input">
+        </label>
+        <div *ngIf="uploadedPictures.length > 0">
+            <h3>Uploaded Pictures:</h3>
+            <div *ngFor="let picture of uploadedPictures">
+                <img [src]="picture" alt="Uploaded Picture">
+            </div>
+        </div>
+    </form>
+    <div class="button-container">
+        <button class="button" (click)="submitReview()">Submit Review</button>
+    </div>
+</body>
+
+</html>
