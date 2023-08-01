@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Places to Travel in Toronto</title>
 </head>
+
 <body>
+  <nav>
+    <div class="navbar">
+      <a routerLink="/" routerLinkActive="active" class="logo">Destination Xplorer</a>
+      <ul>
+        <li> <a routerLink="/home" routerLinkActive="active">HOME</a></li>
+        <li><a routerLink="/contacts" routerLinkActive="active">CONTACTS</a></li>
+        <li><a routerLink="/destination" routerLinkActive="active">DESTINATION</a></li>
+        <li> <a routerLink="/review" routerLinkActive="active">REVIEW</a></li>
+        <li> <a routerLink="/login" routerLinkActive="active"> LOGIN</a></li>
+
+      </ul>
+    </div>
+  </nav>
   <h1>Places to Travel in Toronto</h1>
   <div class="destination-container">
     <div class="destination-box" id="place1">
@@ -19,7 +34,8 @@
         <i class="fas fa-star" (click)="rateDestination(5, $event)"></i>
       </div>
       <p>
-        The CN Tower is an iconic landmark in Toronto, offering breathtaking views from its observation deck and revolving restaurant.
+        The CN Tower is an iconic landmark in Toronto, offering breathtaking views from its observation deck and
+        revolving restaurant.
       </p>
       <button onclick="redirectToReview('place1')">View details</button>
     </div>
@@ -32,7 +48,8 @@
         <i class="fas fa-star" (click)="rateDestination(3, $event)"></i>
       </div>
       <p>
-        The Royal Ontario Museum is a museum of art, world culture and natural history in Toronto, Ontario, Canada. It is one of the largest museums in North America and the largest in Canada. 
+        The Royal Ontario Museum is a museum of art, world culture and natural history in Toronto, Ontario, Canada. It
+        is one of the largest museums in North America and the largest in Canada.
       </p>
       <button onclick="redirectToReview('place2')">View details</button>
     </div>
@@ -47,7 +64,9 @@
         <i class="fas fa-star" (click)="rateDestination(5, $event)"></i>
       </div>
       <p>
-        Ripley's Aquarium of Canada is a public aquarium in Toronto, Ontario, Canada. The aquarium is one of three aquariums owned-and-operated by Ripley Entertainment. It is located in downtown Toronto, just southeast of the CN Tower.
+        Ripley's Aquarium of Canada is a public aquarium in Toronto, Ontario, Canada. The aquarium is one of three
+        aquariums owned-and-operated by Ripley Entertainment. It is located in downtown Toronto, just southeast of the
+        CN Tower.
       </p>
       <button onclick="redirectToReview('place3')">View details</button>
     </div>
@@ -61,10 +80,12 @@
         <i class="fas fa-star" (click)="rateDestination(4, $event)"></i>
       </div>
       <p>
-        The pedestrian-only Distillery District, set in quaint 19th century buildings that once housed a large whiskey distillery, draws crowds to its cobblestone streets lined with hip indie restaurants, bars and boutiques.
+        The pedestrian-only Distillery District, set in quaint 19th century buildings that once housed a large whiskey
+        distillery, draws crowds to its cobblestone streets lined with hip indie restaurants, bars and boutiques.
       </p>
       <button onclick="redirectToReview('place4')">View details</button>
     </div>
   </div>
 </body>
+
 </html>
