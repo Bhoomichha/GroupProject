@@ -43,4 +43,23 @@ h1 {
     border-radius: 5px;
     cursor: pointer;
   }
+  .destination-rating {
+    color: #FFD700; 
+    font-size: 20px;
+    margin-bottom: 10px;
+
+    i {
+      &.far {
+        color: #ccc;
+      }
+
+      &.rated {
+        color: #FFD700; 
+      }
+  }
+  p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
 }

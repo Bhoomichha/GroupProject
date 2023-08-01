@@ -19,3 +19,4 @@ describe('DestinationComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
