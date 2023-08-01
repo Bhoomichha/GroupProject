@@ -4,28 +4,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Home</title>
+  <link rel="stylesheet" href="app.component.scss">
 </head>
 
 <body>
-  <mat-toolbar class="toolbar">
+  <div class="banner">
+    <div class="navbar">
+      <a routerLink="/" routerLinkActive="active" class="logo">Destination Xplorer</a>
+      <ul>
+        <li> <a routerLink="/home" routerLinkActive="active">HOME</a></li>
+        <li><a routerLink="/contacts" routerLinkActive="active">CONTACTS</a></li>
+        <li><a routerLink="/destination" routerLinkActive="active">DESTINATION</a></li>
+        <li> <a routerLink="/review" routerLinkActive="active">REVIEW</a></li>
+        <li> <a routerLink="/login" routerLinkActive="active"> LOGIN</a></li>
 
-    <a mat-button routerLink="/home" class="circular-text">DESTINATION XPLORER</a>
-    <span class="example-spacer"></span>
-    <div>
-      <nav class="red-links">
-        <a mat-button routerLink="/home" routerLinkActive="active">HOME</a>
-        <a mat-button routerLink="/contacts" routerLinkActive="active">CONTACTS</a>
-        <a mat-button routerLink="/destination" routerLinkActive="active">DESTINATION</a>
-        <a mat-button routerLink="/review" routerLinkActive="active">REVIEW</a>
-        <a mat-button routerLink="/login" routerLinkActive="active"> LOGIN</a>
-      </nav>
+      </ul>
     </div>
-  </mat-toolbar>
+    <div class="content">
+      <h1>Uncover Travel Treasures</h1><br>
+      <p>Discover Your Dream Destination with Destination Xplorer</p>
+      <div>
+        <a routerLink="../destination" routerLinkActive="active"><button type="button"><span></span>Learn
+            More</button></a>
+        <a routerLink="../login" routerLinkActive="active"><button type="button"><span></span>Login</button></a>
+      </div>
+    </div>
 
-
-
+  </div>
   <router-outlet></router-outlet>
+
 </body>
 
 </html>
