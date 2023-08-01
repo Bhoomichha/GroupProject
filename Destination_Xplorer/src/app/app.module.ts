@@ -11,6 +11,7 @@ import { SignupComponent } from './signup/signup.component';
 import { DestinationComponent } from './destination/destination.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { LoginComponent } from './login/login.component';
+import appRoutes from './routerconfig';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
@@ -45,8 +46,9 @@ import { HttpClientModule } from '@angular/common/http';
     MatCommonModule,
     FormsModule,
     RouterModule,
+    RouterModule.forRoot(appRoutes),
     HttpClientModule,
-    
+
 
   ],
   providers: [],
