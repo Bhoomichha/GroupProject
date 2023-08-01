@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { DestinationComponent } from './destination/destination.component';
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'destination', component: DestinationComponent },
   { path: 'review', component: ReviewComponent },
   { path: 'signup', component: SignupComponent },
+  { path: 'login', component: LoginComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }, // Default route to 'home'
   { path: '**', redirectTo: '/home' }, // Redirect to 'home' for any other unknown routes
 ];

@@ -10,13 +10,15 @@ import { ReviewComponent } from './review/review.component';
 import { SignupComponent } from './signup/signup.component';
 import { DestinationComponent } from './destination/destination.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { LoginComponent } from './login/login.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCommonModule } from '@angular/material/core';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { LoginComponent } from './login/login.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -29,6 +31,8 @@ import { LoginComponent } from './login/login.component';
     ContactsComponent,
     LoginComponent,
 
+
+
   ],
   imports: [
     BrowserModule,
@@ -40,6 +44,10 @@ import { LoginComponent } from './login/login.component';
     MatButtonModule,
     MatCommonModule,
     FormsModule,
+    RouterModule,
+    HttpClientModule,
+    
+
   ],
   providers: [],
   bootstrap: [AppComponent],

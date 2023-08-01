@@ -1,1 +1,30 @@
-<p>login works!</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+</head>
+
+<body>
+    <form class="form">
+        <div class="header">Log In</div>
+        <div class="inputs">
+            <input placeholder="Email" class="input" type="text">
+            <input placeholder="Password" class="input" type="password">
+            <div class="checkbox-container">
+                <label class="checkbox">
+                    <input type="checkbox" id="checkbox">
+                </label>
+                <label for="checkbox" class="checkbox-text">Remember me</label>
+            </div>
+            <button type="submit" class="login-btn">Submit</button>
+            <p class="signup-link">Don't have an account? <a routerLink="../signup" routerLinkActive="active">Sign
+                    up</a></p>
+        </div>
+    </form>
+    <router-outlet></router-outlet>
+</body>
+
+</html>
