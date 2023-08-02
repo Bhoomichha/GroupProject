@@ -11,6 +11,9 @@ import { SignupComponent } from './signup/signup.component';
 import { DestinationComponent } from './destination/destination.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { LoginComponent } from './login/login.component';
+import { CNTowerComponent } from './destination/CNTower.component';
+import { RoyalOntarioComponent } from './destination/RoyalOntario.component';
+import { RipleysAquariumComponent } from './destination/RipleysAquarium.component';
 import appRoutes from './routerconfig';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -31,6 +34,9 @@ import { HttpClientModule } from '@angular/common/http';
     DestinationComponent,
     ContactsComponent,
     LoginComponent,
+    CNTowerComponent,
+    RoyalOntarioComponent,
+    RipleysAquariumComponent,
 
 
 

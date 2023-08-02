@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Ontario Museum - Destination_Xplorer</title>
+  <link rel="stylesheet" href="RoyalOntario.component.scss">
+</head>
+<body>
+  <nav>
+    <div class="navbar">
+        <a routerLink="/" routerLinkActive="active" class="logo">Destination Xplorer</a>
+        <ul>
+            <li> <a routerLink="/home" routerLinkActive="active">HOME</a></li>
+            <li><a routerLink="/contacts" routerLinkActive="active">CONTACTS</a></li>
+            <li><a routerLink="/destination" routerLinkActive="active">DESTINATION</a></li>
+            <li> <a routerLink="/review" routerLinkActive="active">REVIEW</a></li>
+            <li> <a routerLink="/login" routerLinkActive="active"> LOGIN</a></li>
+        </ul>
+    </div>
+  </nav>
+  <header>
+    <h1 class="inline-block3"><b>Royal Ontario Museum</b></h1>
+    <h2 class="inline-block3">Rate: </h2>
+  </header>
+  <main>
+    <section id="overview">
+      <div class="sudoku-grid">
+        <div class="image-container">
+          <img src="../../assets/image/Destination_2.jpg" alt="Royal Ontario Museum">
+        </div>
+        <div class="small">
+          <img src="../../assets/image/Destination_2-1.jpg" alt="Royal Ontario Museum">
+          <img src="../../assets/image/Destination_2-2.jpg" alt="Royal Ontario Museum">
+        </div>
+        <div class="small">
+          <img src="../../assets/image/Destination_2-3.jpg" alt="Royal Ontario Museum">
+          <img src="../../assets/image/Destination_2-4.jpg" alt="Royal Ontario Museum">
+        </div>
+      </div>
+      <div class="content">
+        <div class="about-map-container">
+          <div class="about-section">
+            <h2>About</h2>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Royal Ontario Museum is the biggest museum of world cultures and natural history in Canada. Located right in downtown Toronto, the striking main entrance to the museum, known as The Crystal and designed by Michael Lee Chin, will draw you in right away. Inside, the museum houses exhibits that run the gamut from dinosaurs to ancient Egypt to Canada’s First Nations. It’s hard to categorize the, oh, six million-or-so objects the museum has in its collections, but trust us, you’ll be able to find something you really enjoy. As you walk from floor to floor, past the 25-metre totem pole, you’ll encounter art, history, archeology, mineralogy, geology, paleontology, zoology, and elements of any other -ology you could probably imagine! With something new to discover every time you visit, the 100-year-old museum is a favorite of locals and tourists alike.</p>
+            <hr>
+            <h2 class="inline-block">Opening Hours</h2>
+            <h2 class="inline-block">Suggested Duration</h2>
+            <br>
+            <h3 class="inline-block2">- 10:00 a.m. to 5:30 p.m.</h3>
+            <h3 class="inline-block2">- 3 to 4 hours</h3>
+            <hr>
+            <h2>Tickets - General Admission</h2>
+            <h3 class="tickets">- Adult: <b>C$26</b></h3>
+            <h3 class="tickets">- Child(ages 4-14): <b>C$16</b></h3>
+            <h3 class="tickets">- Senior(ages 65+): <b>C$21</b></h3>
+            <h3 class="tickets">- Student(with valid student card): <b>C$20</b></h3>
+          </div>
+          <hr>
+          <div class="map-section">
+            <h2>Location</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2889.7793538589137!2d-79.39626108545692!3d43.667709979119575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34e45f1441b1%3A0xe2956c0c8db09c6e!2sRoyal%20Ontario%20Museum!5e0!3m2!1sen!2sca!4v1655987448522!5m2!1sen!2sca"
+               width="580"
+               height="450"
+               style="border:0;"
+               allowfullscreen=""
+               loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="buttons-container">
+      <a href="https://www.rom.on.ca/en" target="_blank"><button type="button">VIEW WEBSITE</button></a>
+      <a href="/review"><button type="button">WRITE A REVIEW</button></a>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; SUMMER 2023 - COMP 229 - Group 5 Project - Destination Xplorer. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -4,6 +4,9 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { DestinationComponent } from './destination/destination.component';
 import { ReviewComponent } from './review/review.component';
 import { SignupComponent } from './signup/signup.component';
+import { CNTowerComponent } from './destination/CNTower.component';
+import { RoyalOntarioComponent } from './destination/RoyalOntario.component';
+import { RipleysAquariumComponent } from './destination/RipleysAquarium.component';
 import { Routes } from '@angular/router';
 
 const appRoutes: Routes = [
@@ -30,6 +33,18 @@ const appRoutes: Routes = [
     {
         path: 'login',
         component: LoginComponent
+    },
+    {
+        path: 'cntower',
+        component: CNTowerComponent 
+    },
+    {
+        path: 'royalontario',
+        component: RoyalOntarioComponent 
+    },
+    {
+        path: 'ripleysaquarium',
+        component: RipleysAquariumComponent 
     },
     {
         path: '',

@@ -3,15 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CN Tower - TripAdvisor</title>
+  <title>CN Tower - Destination_Xplorer</title>
   <link rel="stylesheet" href="CNTower.component.scss">
 </head>
 <body>
+  <nav>
+    <div class="navbar">
+        <a routerLink="/" routerLinkActive="active" class="logo">Destination Xplorer</a>
+        <ul>
+            <li> <a routerLink="/home" routerLinkActive="active">HOME</a></li>
+            <li><a routerLink="/contacts" routerLinkActive="active">CONTACTS</a></li>
+            <li><a routerLink="/destination" routerLinkActive="active">DESTINATION</a></li>
+            <li> <a routerLink="/review" routerLinkActive="active">REVIEW</a></li>
+            <li> <a routerLink="/login" routerLinkActive="active"> LOGIN</a></li>
+        </ul>
+    </div>
+  </nav>
   <header>
-    <h1>CN Tower</h1>
-    <nav>
-      <!-- Add navigation links here -->
-    </nav>
+    <h1 class="inline-block3"><b>CN Tower</b></h1>
+    <h2 class="inline-block3">Rate: </h2>
   </header>
   <main>
     <section id="overview">
@@ -32,26 +42,41 @@
         <div class="about-map-container">
           <div class="about-section">
             <h2>About</h2>
-            <p>One of Canada’s greatest landmarks and one of the seven wonders of the modern world, the CN Tower has come to define the Toronto skyline. At 553 metres in height, this engineering wonder is hard to miss during any trip through the city and you don’t want to miss it. Beyond being a very cool building you can take an elevator up to the revolving 360 Restaurant for world-class dining. Feeling a bit bold? Walk across the glass floor, only 2.5 inches thick, 113 storeys above the ground. Want an even bigger thrill? Travel up another 33 storeys to the Skypod lookout. Still not daring enough? Strap on a harness, head outside, and take a thrilling walk along the building’s edge with nothing but air between you and the ground, in the not-for-the-faint-of-heart EdgeWalk experience. This adrenaline-inducing activity is actually the world’s highest ‘hands-free walk,’ so you can brag about that one to your friends.</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;One of Canada’s greatest landmarks and one of the seven wonders of the modern world, the CN Tower has come to define the Toronto skyline. At 553 metres in height, this engineering wonder is hard to miss during any trip through the city and you don’t want to miss it. Beyond being a very cool building you can take an elevator up to the revolving 360 Restaurant for world-class dining. Feeling a bit bold? Walk across the glass floor, only 2.5 inches thick, 113 storeys above the ground. Want an even bigger thrill? Travel up another 33 storeys to the Skypod lookout. Still not daring enough? Strap on a harness, head outside, and take a thrilling walk along the building’s edge with nothing but air between you and the ground, in the not-for-the-faint-of-heart EdgeWalk experience. This adrenaline-inducing activity is actually the world’s highest ‘hands-free walk,’ so you can brag about that one to your friends.</p>
+            <hr>
+            <h2 class="inline-block">Opening Hours</h2>
+            <h2 class="inline-block">Suggested Duration</h2>
+            <br>
+            <h3 class="inline-block2">- 9 a.m. to 10 p.m.</h3>
+            <h3 class="inline-block2">- 1 to 2 hours</h3>
+            <hr>
+            <h2>Activities</h2>
+            <h3>- Timed General Admission: from <b>C$43</b> per adult</h3>
+            <h3>- EdgeWalk: from <b>C$199</b> per person(Age 13+)</h3>
+            
           </div>
+          <hr>
           <div class="map-section">
-            <section id="location">
             <h2>Location</h2>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.582183562376!2d-79.38539338451684!3d43.64256697912276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34e45f1441b1%3A0xe2956c0c8db09c6e!2sCN%20Tower!5e0!3m2!1sen!2sca!4v1655987448522!5m2!1sen!2sca"
-              width="600"
-              height="450"
-              style="border:0;"
-              allowfullscreen=""
-              loading="lazy">
+               width="580"
+               height="450"
+               style="border:0;"
+               allowfullscreen=""
+               loading="lazy">
             </iframe>
-          </section>
+          </div>
         </div>
       </div>
     </section>
+    <div class="buttons-container">
+      <a href="https://www.cntower.ca/" target="_blank"><button type="button">VIEW WEBSITE</button></a>
+      <a href="/review"><button type="button">WRITE A REVIEW</button></a>
+    </div>
   </main>
   <footer>
-    <p>&copy; 2023 TripAdvisor CN Tower. All rights reserved.</p>
+    <p>&copy; SUMMER 2023 - COMP 229 - Group 5 Project - Destination Xplorer. All rights reserved.</p>
   </footer>
 </body>
 </html>
