@@ -9,6 +9,19 @@
 </head>
 
 <body>
+    <nav>
+        <div class="navbar">
+            <a routerLink="/" routerLinkActive="active" class="logo">Destination Xplorer</a>
+            <ul>
+                <li> <a routerLink="/home" routerLinkActive="active">HOME</a></li>
+                <li><a routerLink="/contacts" routerLinkActive="active">CONTACTS</a></li>
+                <li><a routerLink="/destination" routerLinkActive="active">DESTINATION</a></li>
+                <li> <a routerLink="/review" routerLinkActive="active">REVIEW</a></li>
+                <li> <a routerLink="/login" routerLinkActive="active"> LOGIN</a></li>
+
+            </ul>
+        </div>
+    </nav>
     <div class="body">
         <div class="container">
             <form action="/register" method="POST">
@@ -17,11 +30,11 @@
                     <p>Create a free account with your email.</p>
                 </div>
                 <div class="inputs">
-                    <input type="text" placeholder="Full Name">
-                    <input type="email" placeholder="Email">
-                    <input type="password" placeholder="Password">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
                 </div>
-                <button>Sign up</button>
+                <button type="submit">Sign up</button>
             </form>
             <div class="form-footer">
                 <p>Have an account?</p> <a routerLink="../login" routerLinkActive="active">Login</a>

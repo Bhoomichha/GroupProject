@@ -17,7 +17,7 @@ const routes: Routes = [
   { path: 'cntower', component: CNTowerComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }, // Default route to 'home'
   { path: '**', redirectTo: '/home' }, // Redirect to 'home' for any other unknown routes
-];
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

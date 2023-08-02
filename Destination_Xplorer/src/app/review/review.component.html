@@ -8,35 +8,48 @@
 </head>
 
 <body>
+    <nav>
+        <div class="navbar">
+            <a routerLink="/" routerLinkActive="active" class="logo">Destination Xplorer</a>
+            <ul>
+                <li> <a routerLink="/home" routerLinkActive="active">HOME</a></li>
+                <li><a routerLink="/contacts" routerLinkActive="active">CONTACTS</a></li>
+                <li><a routerLink="/destination" routerLinkActive="active">DESTINATION</a></li>
+                <li> <a routerLink="/review" routerLinkActive="active">REVIEW</a></li>
+                <li> <a routerLink="/login" routerLinkActive="active"> LOGIN</a></li>
+
+            </ul>
+        </div>
+    </nav>
     <h1>Add your Review</h1>
-
-    <form class="container">
-        <div>
-            <label class="form-title" for="title">Review Title:</label>
-            <input required class="input" type="text" id="title" [(ngModel)]="reviewTitle">
-        </div>
-
-        <div>
-            <label class="form-title" for="description">Review Description:</label>
-            <textarea id="description" [(ngModel)]="reviewDescription" cols="25" rows="5"></textarea>
-        </div>
-
-        <span class="form-title">Upload your file</span>
-        <p class="form-paragraph">
-            File should be an image
-        </p>
-        <label for="file-input" class="drop-container">
-            <span class="drop-title">Drop files here</span>
-            or
-            <input type="file" accept="image/*" required="" id="file-input">
-        </label>
-        <div *ngIf="uploadedPictures.length > 0">
-            <h3>Uploaded Pictures:</h3>
-            <div *ngFor="let picture of uploadedPictures">
-                <img [src]="picture" alt="Uploaded Picture">
+    <div class="form-container">
+        <form class="form">
+            <div class="form-group">
+                <label for="title">Review Title</label>
+                <input type="text" name="title" required [(ngModel)]="reviewTitle">
             </div>
-        </div>
-    </form>
+            <div class="form-group">
+                <label for="textarea">Review Description</label>
+                <textarea id="description" name="description" [(ngModel)]="reviewDescription" cols="25" rows="5"
+                    required></textarea>
+            </div>
+            <span class="form-title">Upload your file</span>
+            <p class="form-paragraph">
+                File should be an image
+            </p>
+            <label for="file-input" class="drop-container">
+                <span class="drop-title">Drop files here</span>
+                or
+                <input type="file" accept="image/*" required="" id="file-input">
+            </label>
+            <div *ngIf="uploadedPictures.length > 0">
+                <h3>Uploaded Pictures:</h3>
+                <div *ngFor="let picture of uploadedPictures">
+                    <img [src]="picture" alt="Uploaded Picture">
+                </div>
+            </div>
+        </form>
+    </div>
     <div class="button-container">
         <button class="button" (click)="submitReview()">Submit Review</button>
     </div>
