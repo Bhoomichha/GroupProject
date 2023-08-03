@@ -10,6 +10,7 @@ import { LoginComponent } from './login/login.component';
 import { CNTowerComponent } from './destination/CNTower.component';
 import { RoyalOntarioComponent } from './destination/RoyalOntario.component';
 import { RipleysAquariumComponent } from './destination/RipleysAquarium.component';
+import { DistilleryHistoricDistrictComponent } from './destination/DistilleryHistoricDistrict.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'cntower', component: CNTowerComponent },
   { path: 'royalontario', component: RoyalOntarioComponent },
   { path: 'ripleysaquarium', component: RipleysAquariumComponent },
+  { path: 'distilleryhistoricdistrict', component: DistilleryHistoricDistrictComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }, // Default route to 'home'
   { path: '**', redirectTo: '/home' }, // Redirect to 'home' for any other unknown routes
 ]

@@ -14,6 +14,7 @@ import { LoginComponent } from './login/login.component';
 import { CNTowerComponent } from './destination/CNTower.component';
 import { RoyalOntarioComponent } from './destination/RoyalOntario.component';
 import { RipleysAquariumComponent } from './destination/RipleysAquarium.component';
+import { DistilleryHistoricDistrictComponent } from './destination/DistilleryHistoricDistrict.component';
 import appRoutes from './routerconfig';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -37,7 +38,7 @@ import { HttpClientModule } from '@angular/common/http';
     CNTowerComponent,
     RoyalOntarioComponent,
     RipleysAquariumComponent,
-
+    DistilleryHistoricDistrictComponent,
 
 
   ],
